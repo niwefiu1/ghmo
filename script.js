@@ -50,3 +50,74 @@ else{
 for(noRuangan; noRuangan<=nRuangan; noRuangan++) {
 	console.log(`R${noRuangan} CCTV Tidak berfungsi`)
 }
+
+
+let input = prompt("hari ke?"), hari = "";
+
+switch(input){
+case "1":hari = "Senin";
+break;
+case "2":
+hari = "Selasa";
+break;
+case "3":
+hari = "Rabu";
+break;
+case "4":
+hari = "Kamis";
+break;
+case "5":
+hari = "Jumat";
+break;
+case "6":
+hari = "Sabtu";
+break;
+case "7":
+hari = "Minggu";
+break;
+
+default:
+alert("NaN");
+}
+
+if(hari === ""){alert("NaN")}
+else{alert(`hasil adalah ${hari}`)}
+
+
+var uname = prompt("user?")
+var pass = prompt("pass?")
+
+if(uname === "admin"){
+if(pass === "1234"){console.log("ok");}
+else{console.log("passIsFalse")}}
+else{
+console.log("unameIsFalse")
+}
+
+let s = "";
+for(let i = 1;i<5;i++){
+	for(let j = 0; j<i ;j++){
+		s+="*";
+	}
+	s+="\n";
+}
+console.log(s);
+
+let s = "";
+for(let i = 5;i>0;i--){
+	for(let j = 0; j<i ;j++){
+		s+="*";
+	}
+	s+="\n";
+}
+console.log(s);
+
+function sayHola(name){return `Hello, ${name}`;}
+var name=prompt(`nama?`);
+console.log(sayHola(name));
+
+function sqr(n){
+	return parseInt(n*n)
+}
+n = prompt(`n?`);
+console.log(sqr(n));
